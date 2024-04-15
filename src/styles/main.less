@@ -1,3 +1,40 @@
 @import "./mapas.less";
+@import "./variaveis.less";
+
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpoinntTablet: ~"(min-width: 768px) and (max-width: 1023px)";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:#fontes[fontePrincipal];
+}
+
+header {
+    background-color: #cores[backgroundcolor];
+    padding: 16px 0;
+}
+
+body {
+    background-color: #cores[backgroundcolor];
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media @breakpointMobile {
+    .container {
+        max-width: 80%;
+    }
+}
+
+@media @breakpoinntTablet {
+    .container {
+        max-width: 80%;
+    }
+}
